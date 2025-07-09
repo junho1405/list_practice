@@ -21,7 +21,7 @@ public:
 	{
 		cout << "출력" << endl;
 		size = 0;
-		head = nullptr;
+		head = null;
 		tail = nullptr;
 
 	}
