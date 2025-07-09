@@ -122,6 +122,11 @@ public:
 		//size--;
 	}
 	
+	bool empty()
+	{
+		return (head == nullptr);
+	}
+
 	~list()
 	{
 		while (head != nullptr)
@@ -132,14 +137,13 @@ public:
 	}
 };
 
+
+
 int  main()
 {
 #pragma region list
 	list<int>list;
-	list.pop_back();
 	list.push_back(20);
-	list.push_front(10);
-	list.push_front(5);
 	list.pop_front();
 	list.pop_back();
 	return 0;
