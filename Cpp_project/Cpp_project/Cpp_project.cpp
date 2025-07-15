@@ -9,7 +9,7 @@ private:
 	{
 		T data;
 		Node* nextNode;
-		Node* previousNode;
+		Node* previouse;
 
 	};
 	int size;
@@ -17,7 +17,7 @@ private:
 	Node* tail;
 
 public:
-	list() 
+	list()
 	{
 		cout << "출력" << endl;
 		size = 0;
@@ -25,13 +25,121 @@ public:
 		tail = NULL;
 
 	}
+	void push_front(T data)
+	{
+		Node* newNode = new Node;
+		newNode->data = data;
+		newNode->nextNode = nullptr;
+		newNode->previouse = nullptr;
 
+		if (head == nullptr)
+		{
+			head = newNode;
+			tail = newNode;
+		}
+		else
+		{
+			head->previouse = newNode;
+			newNode->nextNode = head;
+			head = newNode;
+		}
+		size++;
+	}
+	void pop_front()
+	{
+		if (head == nullptr)
+		{
+			cout << "linked list is empty" << endl;
+		}
+		else
+		{
+			Node* deleteNode = head;
+			if (head == tail)
+			{
+			head = nullptr;
+			tail = nullptr;
+			}
+			else
+			{
+				deleteNode->nextNode->previouse = nullptr;
+				head = head->nextNode;
+			}
+			delete deleteNode;
+			size--;
+		}
+	}
+	void push_back(T data)
+	{
+		Node* newNode = new Node;
+		newNode->data = data;
+		newNode->nextNode = nullptr;
+		newNode->previouse = nullptr;
+		if (tail == nullptr)
+		{
+			head = newNode;
+			tail = newNode;
+		}
+		else
+		{
+			tail->nextNode = newNode;
+			newNode->previouse = tail;
+			tail = newNode;
+		}
+		size++;
+	}
+	void pop_back()
+	{
+		if (tail == nullptr)
+		{
+			cout << "linked list is empty" << endl;
+		}
+		else
+		{
+			Node* deleteNode = tail;
+			if (head == tail)
+			{
+				head = nullptr;
+				tail = nullptr;
+			}
+			else
+			{
+				tail->previouse->nextNode = nullptr;
+				tail = tail->previouse;
+			}
+			delete deleteNode;
+			size--;
+		}
+	}
+	bool empty()
+	{
+		return (head == nullptr);
+	}
+	void remove()
+	{
 
+	}
+	~list()
+	{
+		while (head != nullptr)
+		{
+			pop_front();
+			cout << "pop" << endl;
+		}
+		cout << "empty" << endl;
+	}
 };
+
 int main()
 {
 #pragma region 양방향 연결리스트
-	list<int>list;
+	list<int> list;
+	list.push_front(10);
+	list.push_front(20);
+	list.pop_back();
+	list.pop_front();
+
+
+	cout << list.empty() << endl;
 #pragma endregion
 
 }

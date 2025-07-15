@@ -155,23 +155,9 @@ public:
 					size--;
 					deleteNode = head;
 				}
-				delete deleteNode;
-				size--;
-
-				//if (deleteNode->data == data)
-				//{
-				//	head = deleteNode->next;
-				//	//previousNode->next = deleteNode->next;
-				//}
-				//previousNode = deleteNode;
-				//deleteNode = deleteNode->next;
-				//delete deleteNode->next;
-				//deleteNode->next = nullptr;
-				//size--;
-				//return;
+				previousNode = deleteNode;
+				deleteNode = deleteNode->next;
 			}
-			previousNode = deleteNode;
-			deleteNode = deleteNode->next;
 		}
 	}
 
