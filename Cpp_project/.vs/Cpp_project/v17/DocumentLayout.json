@@ -7,8 +7,8 @@
       "RelativeMoniker": "D:0:0:{56831B30-8363-4E95-B16B-4FDE7BF9B105}|Cpp_project\\Cpp_project.vcxproj|solutionrelative:Cpp_project\\Cpp_project.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8323B040-2F3C-4A72-8D5D-29A8E960ABAC}|class1th single_rinked_list\\class1th single_rinked_list.vcxproj|C:\\Users\\OFFICE\\Desktop\\list_practice\\Cpp_project\\class1th single_rinked_list\\class1th single_rinked_list.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{8323B040-2F3C-4A72-8D5D-29A8E960ABAC}|class1th single_rinked_list\\class1th single_rinked_list.vcxproj|solutionrelative:class1th single_rinked_list\\class1th single_rinked_list.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{E8D47E6F-0F19-4D67-B349-B42CC20CD222}|Class2th double linked\\Class2th double linked.vcxproj|C:\\Users\\OFFICE\\Desktop\\list_practice\\Cpp_project\\Class2th double linked\\Class2th double linked.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E8D47E6F-0F19-4D67-B349-B42CC20CD222}|Class2th double linked\\Class2th double linked.vcxproj|solutionrelative:Class2th double linked\\Class2th double linked.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,14 +23,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "class1th single_rinked_list.cpp",
-              "DocumentMoniker": "C:\\Users\\OFFICE\\Desktop\\list_practice\\Cpp_project\\class1th single_rinked_list\\class1th single_rinked_list.cpp",
-              "RelativeDocumentMoniker": "class1th single_rinked_list\\class1th single_rinked_list.cpp",
-              "ToolTip": "C:\\Users\\OFFICE\\Desktop\\list_practice\\Cpp_project\\class1th single_rinked_list\\class1th single_rinked_list.cpp",
-              "RelativeToolTip": "class1th single_rinked_list\\class1th single_rinked_list.cpp",
-              "ViewState": "AgIAALIAAAAAAAAAAAAAwMcAAAAKAAAAAAAAAA==",
+              "Title": "Class2th double linked.cpp",
+              "DocumentMoniker": "C:\\Users\\OFFICE\\Desktop\\list_practice\\Cpp_project\\Class2th double linked\\Class2th double linked.cpp",
+              "RelativeDocumentMoniker": "Class2th double linked\\Class2th double linked.cpp",
+              "ToolTip": "C:\\Users\\OFFICE\\Desktop\\list_practice\\Cpp_project\\Class2th double linked\\Class2th double linked.cpp",
+              "RelativeToolTip": "Class2th double linked\\Class2th double linked.cpp",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAD4AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-07-15T04:24:31.251Z",
+              "WhenOpened": "2025-07-16T05:35:48.656Z",
               "EditorCaption": ""
             },
             {
@@ -41,7 +41,7 @@
               "RelativeDocumentMoniker": "Cpp_project\\Cpp_project.cpp",
               "ToolTip": "C:\\Users\\OFFICE\\Desktop\\list_practice\\Cpp_project\\Cpp_project\\Cpp_project.cpp",
               "RelativeToolTip": "Cpp_project\\Cpp_project.cpp",
-              "ViewState": "AgIAAH4AAAAAAAAAAAApwIkAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAnwEoAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-07-08T04:23:34.603Z",
               "EditorCaption": ""

@@ -131,8 +131,8 @@ public:
 	{
 		if (head == nullptr)
 		{
-			cout << "rinked is empty" << endl;
-			return;
+		cout << "rinked is empty" << endl;
+		return;
 		}
 		else
 		{
