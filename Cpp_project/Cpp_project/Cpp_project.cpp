@@ -1,91 +1,64 @@
-﻿#include<iostream>
-
+﻿#include <iostream>
+#include<string>
 using namespace std;
-template<typename T>
-
-//벡터의 크기 
-//벡터 저장가능 메모리공간
-//동적 배열을 하기 위한 포인터 변수
-//생성자까지 모두 적을것
-
-class Vector
+class String
 {
 private:
+    char* pointer;
     int size;
-    int capacity;
-    T* container;
-
 public:
-    Vector() 
+    String()
     {
         size = 0;
-        capacity = 0;
-        container = nullptr;
+        pointer = nullptr;
     }
-    ~Vector()
+    void operator = (const char* word)
     {
-        if (container != nullptr)
+        size = strlen(word)+1;
+        if (pointer == nullptr)
         {
-            delete[]container;
+            pointer = new char[size];
+            for (int i = 0; i < size; i++)
+            {
+                pointer[i] = word[i];
+            }
         }
-    }
-    void resize(int newSize)
-    {
-        // 1. capacity에 새로운 size값을 저장 v
-        capacity = newSize;
+        else
+        {
+            char* container = new char[size];
 
-        // 2. 새로운 포인터 변수를 생성, 새롭게 만들어진 메모리 공간을 가리키도록 합니다.
-        T* newContainer = new T[capacity];
-        // 3. 새로운 메모리 공간의 값을 초기화합니다.
-        for (int i = 0; i < size; i++)
-        {
-            newContainer[i] = NULL;
+            for (int i =0;i<size;i++)
+            { 
+                container[i] = word[i];
+            }
+            delete[] pointer;
+            pointer = container;
         }
-        // 4. 기존 배열에 있는값을 복사해서 새로운 배열에 넣어준다.
-        for (int i = 0; i < size; i++)
-        {
-            newContainer[i] = container[i];
-        }
-        // 5. 기존배열의 메모리 해제
-        if (container != nullptr)
-        {
-            delete[] container;
-        }
-        // 6. 기존 배열을 가르키던 포인터 변수의 값을 새로운 배열의 시작주소로 가르킨다.
-        container = newContainer;
-        }
-    void push_back(T data)
+    }
+    int getSize() const {
+        return size - 1;  // null 문자 제외
+    }
+    
+
+    char operator[]( int index) const//이게 있어야지 카운트를 배열화시키는 게 가능하다.
     {
-        if (size >= capacity)
-        {
-            int newCapacity = capacity * 2;
-            resize(newCapacity);
-        }
-        container[size++] = data;
-        cout << "들어간 값 : " << data << endl;
-        cout << "새로 갱신된 최대치 : " << capacity << endl;
-        cout << "배열의 값 : {";
-        for (int i = 0; i < size; i++)
-        {
-            cout << container[i];            
-        }
-        cout << "}\n";
-        cout << "최종 size :"<<size<<endl;
-        cout << "최종 capacity :"<<capacity<<endl;
+        return pointer[index];
+    }
+
+    ~String()
+    {
+        delete[] pointer;
     }
 };
-
 int main()
 {
-    Vector<int> vec;
-    vec.resize(1);
-    vec.push_back(1);
-    vec.push_back(2);
-    vec.push_back(3); 
-    vec.push_back(1);
-    vec.push_back(2);
-    vec.push_back(3); 
-    vec.push_back(1);
-    vec.push_back(2);
-    vec.push_back(3);
+    String message;
+    message = "League of Legend";
+    //String adidas;
+    //cout <<message.size()<<endl;adidas = "adidas";
+    for (int i = 0; i < message.getSize(); i++)
+    {
+        cout << message[i] ;
+    }
+    return 0;
 }
