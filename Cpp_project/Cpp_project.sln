@@ -18,6 +18,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class3th Circlelist", "Clas
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class4th Vector", "Class4th Vector\Class4th Vector.vcxproj", "{1E947A5A-D682-4783-8FCB-01C52BF8433F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class5th String", "Class5th String\Class5th String.vcxproj", "{CB818FFC-E1CE-4690-BB52-37168156E7EA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -66,6 +68,14 @@ Global
 		{1E947A5A-D682-4783-8FCB-01C52BF8433F}.Release|x64.Build.0 = Release|x64
 		{1E947A5A-D682-4783-8FCB-01C52BF8433F}.Release|x86.ActiveCfg = Release|Win32
 		{1E947A5A-D682-4783-8FCB-01C52BF8433F}.Release|x86.Build.0 = Release|Win32
+		{CB818FFC-E1CE-4690-BB52-37168156E7EA}.Debug|x64.ActiveCfg = Debug|x64
+		{CB818FFC-E1CE-4690-BB52-37168156E7EA}.Debug|x64.Build.0 = Debug|x64
+		{CB818FFC-E1CE-4690-BB52-37168156E7EA}.Debug|x86.ActiveCfg = Debug|Win32
+		{CB818FFC-E1CE-4690-BB52-37168156E7EA}.Debug|x86.Build.0 = Debug|Win32
+		{CB818FFC-E1CE-4690-BB52-37168156E7EA}.Release|x64.ActiveCfg = Release|x64
+		{CB818FFC-E1CE-4690-BB52-37168156E7EA}.Release|x64.Build.0 = Release|x64
+		{CB818FFC-E1CE-4690-BB52-37168156E7EA}.Release|x86.ActiveCfg = Release|Win32
+		{CB818FFC-E1CE-4690-BB52-37168156E7EA}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

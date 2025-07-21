@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{56831B30-8363-4E95-B16B-4FDE7BF9B105}|Cpp_project\\Cpp_project.vcxproj|solutionrelative:Cpp_project\\Cpp_project.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{CB818FFC-E1CE-4690-BB52-37168156E7EA}|Class5th String\\Class5th String.vcxproj|C:\\Users\\OFFICE\\Desktop\\list_practice\\Cpp_project\\Class5th String\\Class5th String.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{CB818FFC-E1CE-4690-BB52-37168156E7EA}|Class5th String\\Class5th String.vcxproj|solutionrelative:Class5th String\\Class5th String.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1E947A5A-D682-4783-8FCB-01C52BF8433F}|Class4th Vector\\Class4th Vector.vcxproj|C:\\Users\\OFFICE\\Desktop\\list_practice\\Cpp_project\\Class4th Vector\\Class4th Vector.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{1E947A5A-D682-4783-8FCB-01C52BF8433F}|Class4th Vector\\Class4th Vector.vcxproj|solutionrelative:Class4th Vector\\Class4th Vector.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -22,11 +26,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 446,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Class5th String.cpp",
+              "DocumentMoniker": "C:\\Users\\OFFICE\\Desktop\\list_practice\\Cpp_project\\Class5th String\\Class5th String.cpp",
+              "RelativeDocumentMoniker": "Class5th String\\Class5th String.cpp",
+              "ToolTip": "C:\\Users\\OFFICE\\Desktop\\list_practice\\Cpp_project\\Class5th String\\Class5th String.cpp",
+              "RelativeToolTip": "Class5th String\\Class5th String.cpp",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAAAIIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-07-21T06:19:52.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Class4th Vector.cpp",
               "DocumentMoniker": "C:\\Users\\OFFICE\\Desktop\\list_practice\\Cpp_project\\Class4th Vector\\Class4th Vector.cpp",
               "RelativeDocumentMoniker": "Class4th Vector\\Class4th Vector.cpp",
@@ -34,12 +51,11 @@
               "RelativeToolTip": "Class4th Vector\\Class4th Vector.cpp",
               "ViewState": "AgIAAGkAAAAAAAAAAAAAAHYAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-07-18T04:44:34.563Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-18T04:44:34.563Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Class3th Circlelist.cpp",
               "DocumentMoniker": "C:\\Users\\OFFICE\\Desktop\\list_practice\\Cpp_project\\Class3th Circlelist\\Class3th Circlelist.cpp",
               "RelativeDocumentMoniker": "Class3th Circlelist\\Class3th Circlelist.cpp",
@@ -57,7 +73,7 @@
               "RelativeDocumentMoniker": "Cpp_project\\Cpp_project.cpp",
               "ToolTip": "C:\\Users\\OFFICE\\Desktop\\list_practice\\Cpp_project\\Cpp_project\\Cpp_project.cpp",
               "RelativeToolTip": "Cpp_project\\Cpp_project.cpp",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAowCoAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-07-08T04:23:34.603Z",
               "EditorCaption": ""
