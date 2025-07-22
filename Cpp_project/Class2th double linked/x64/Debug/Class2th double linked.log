@@ -1,0 +1,17 @@
+﻿  Class2th double linked.cpp
+C:\Users\OFFICE\Desktop\list_practice\Cpp_project\Class2th double linked\Class2th double linked.cpp(137,28): error C2039: 'previous': 'list<int>::Node'의 멤버가 아닙니다.
+      C:\Users\OFFICE\Desktop\list_practice\Cpp_project\Class2th double linked\Class2th double linked.cpp(8,9):
+      'list<int>::Node' 선언을 참조하십시오.
+      C:\Users\OFFICE\Desktop\list_practice\Cpp_project\Class2th double linked\Class2th double linked.cpp(137,28):
+      템플릿 인스턴스화 컨텍스트(가장 오래된 인스턴스화 컨텍스트)가
+          C:\Users\OFFICE\Desktop\list_practice\Cpp_project\Class2th double linked\Class2th double linked.cpp(161,12):
+          컴파일되는 클래스 템플릿 인스턴스화 'list<int>'에 대한 참조를 확인하세요.
+          C:\Users\OFFICE\Desktop\list_practice\Cpp_project\Class2th double linked\Class2th double linked.cpp(117,7):
+          클래스 템플릿 멤버 함수 'void list<int>::remove(T)'을(를) 컴파일하는 중입니다.
+          with
+          [
+              T=int
+          ]
+              C:\Users\OFFICE\Desktop\list_practice\Cpp_project\Class2th double linked\Class2th double linked.cpp(168,13):
+              'main'에서 'list<int>::remove'에 대한 첫 번째 참조를 확인하세요.
+  
