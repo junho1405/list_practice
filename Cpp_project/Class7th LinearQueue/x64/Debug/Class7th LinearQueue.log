@@ -1,0 +1,13 @@
+﻿  Class7th LinearQueue.cpp
+C:\Users\OFFICE\Desktop\list_practice\Cpp_project\Class7th LinearQueue\Class7th LinearQueue.cpp(47,32): warning C4553: '==': 식의 결과가 사용되지 않습니다. '='을(를) 의도했습니까?
+      C:\Users\OFFICE\Desktop\list_practice\Cpp_project\Class7th LinearQueue\Class7th LinearQueue.cpp(47,32):
+      템플릿 인스턴스화 컨텍스트(가장 오래된 인스턴스화 컨텍스트)가
+          C:\Users\OFFICE\Desktop\list_practice\Cpp_project\Class7th LinearQueue\Class7th LinearQueue.cpp(69,15):
+          컴파일되는 클래스 템플릿 인스턴스화 'Queue<int>'에 대한 참조를 확인하세요.
+          C:\Users\OFFICE\Desktop\list_practice\Cpp_project\Class7th LinearQueue\Class7th LinearQueue.cpp(38,10):
+          클래스 템플릿 멤버 함수 'void Queue<int>::pop(void)'을(를) 컴파일하는 중입니다.
+              C:\Users\OFFICE\Desktop\list_practice\Cpp_project\Class7th LinearQueue\Class7th LinearQueue.cpp(81,18):
+              'main'에서 'Queue<int>::pop'에 대한 첫 번째 참조를 확인하세요.
+  
+C:\Users\OFFICE\Desktop\list_practice\Cpp_project\Class7th LinearQueue\Class7th LinearQueue.cpp(63,1): warning C4172: 지역 변수 또는 임시 의 주소를 반환하는 중
+  Class7th LinearQueue.vcxproj -> C:\Users\OFFICE\Desktop\list_practice\Cpp_project\x64\Debug\Class7th LinearQueue.exe

@@ -7,8 +7,8 @@
       "RelativeMoniker": "D:0:0:{56831B30-8363-4E95-B16B-4FDE7BF9B105}|Cpp_project\\Cpp_project.vcxproj|solutionrelative:Cpp_project\\Cpp_project.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FE94E04E-1C0D-4A62-8D4B-5A9BD2BD3AAA}|Class7th LinearQueue\\Class7th LinearQueue.vcxproj|C:\\Users\\OFFICE\\Desktop\\list_practice\\Cpp_project\\Class7th LinearQueue\\Class7th LinearQueue.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{FE94E04E-1C0D-4A62-8D4B-5A9BD2BD3AAA}|Class7th LinearQueue\\Class7th LinearQueue.vcxproj|solutionrelative:Class7th LinearQueue\\Class7th LinearQueue.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{E4E9D8C3-CC32-4A94-8FE4-BC5286A4C2E9}|Class8th CirclQueue\\Class8th CirclQueue.vcxproj|C:\\Users\\OFFICE\\Desktop\\list_practice\\Cpp_project\\Class8th CirclQueue\\Class8th CirclQueue.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E4E9D8C3-CC32-4A94-8FE4-BC5286A4C2E9}|Class8th CirclQueue\\Class8th CirclQueue.vcxproj|solutionrelative:Class8th CirclQueue\\Class8th CirclQueue.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,14 +23,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Class7th LinearQueue.cpp",
-              "DocumentMoniker": "C:\\Users\\OFFICE\\Desktop\\list_practice\\Cpp_project\\Class7th LinearQueue\\Class7th LinearQueue.cpp",
-              "RelativeDocumentMoniker": "Class7th LinearQueue\\Class7th LinearQueue.cpp",
-              "ToolTip": "C:\\Users\\OFFICE\\Desktop\\list_practice\\Cpp_project\\Class7th LinearQueue\\Class7th LinearQueue.cpp",
-              "RelativeToolTip": "Class7th LinearQueue\\Class7th LinearQueue.cpp",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Class8th CirclQueue.cpp",
+              "DocumentMoniker": "C:\\Users\\OFFICE\\Desktop\\list_practice\\Cpp_project\\Class8th CirclQueue\\Class8th CirclQueue.cpp",
+              "RelativeDocumentMoniker": "Class8th CirclQueue\\Class8th CirclQueue.cpp",
+              "ToolTip": "C:\\Users\\OFFICE\\Desktop\\list_practice\\Cpp_project\\Class8th CirclQueue\\Class8th CirclQueue.cpp",
+              "RelativeToolTip": "Class8th CirclQueue\\Class8th CirclQueue.cpp",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-07-22T06:20:30.432Z",
+              "WhenOpened": "2025-07-23T06:18:38.98Z",
               "EditorCaption": ""
             },
             {
@@ -41,7 +41,7 @@
               "RelativeDocumentMoniker": "Cpp_project\\Cpp_project.cpp",
               "ToolTip": "C:\\Users\\OFFICE\\Desktop\\list_practice\\Cpp_project\\Cpp_project\\Cpp_project.cpp",
               "RelativeToolTip": "Cpp_project\\Cpp_project.cpp",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABEAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAIAAAAAAAAAAAAAewIoAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-07-08T04:23:34.603Z",
               "EditorCaption": ""

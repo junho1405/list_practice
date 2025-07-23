@@ -134,7 +134,7 @@ public:
 				else
 				{
 					deleteNode->previouse->nextNode = deleteNode->nextNode;
-					deleteNode->nextNode->previous = deleteNode->previouse;
+					//deleteNode->nextNode->previous = deleteNode->previouse;
 					nextNode = deleteNode->nextNode;
 					delete deleteNode;
 					deleteNode = nextNode;

@@ -1,2 +1,7 @@
 ﻿  Cpp_project.cpp
-  Cpp_project.vcxproj -> C:\Users\OFFICE\Desktop\list_practice\Cpp_project\x64\Debug\Cpp_project.exe
+C:\Users\OFFICE\Desktop\list_practice\Cpp_project\Cpp_project\Cpp_project.cpp(139,14): error C3867: 'PriorityQueue<int>::pop': 비표준 구문입니다. '&'를 사용하여 멤버 포인터를 만드세요.
+      C:\Users\OFFICE\Desktop\list_practice\Cpp_project\Cpp_project\Cpp_project.cpp(139,14):
+      템플릿 인스턴스화 컨텍스트(가장 오래된 인스턴스화 컨텍스트)가
+          C:\Users\OFFICE\Desktop\list_practice\Cpp_project\Cpp_project\Cpp_project.cpp(139,5):
+          컴파일되는 함수 템플릿 인스턴스화 'std::basic_ostream<_Elem,_Traits> &std::operator <<(std::basic_ostream<_Elem,_Traits> &,const std::error_code &)'에 대한 참조를 확인하세요.
+  
