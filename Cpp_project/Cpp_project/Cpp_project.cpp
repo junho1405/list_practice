@@ -1,143 +1,98 @@
-﻿#include<iostream>
-
+﻿#include <iostream>
+#define SIZE 6
 using namespace std;
-template<typename T>
+template<typename KEY, typename VALUE>
 
-class PriorityQueue
+class HashTable
 {
 private:
-    int index;      //사용중인 용량
-    int capacity;   //최대용량
-    T* container;   //사용하려는 주소
+    struct Node
+    {
+        KEY key;
+        VALUE value;
+        Node* next;//자식(Node)의주소
+    };
+    struct Bucket//필요한거 갯수count/시작head/ 버켓이 만들어졌으니 생성자 초기화
+    {
+        int count;
+        Node* head;//헤드(Bucket)의 주소
+    };
+    Bucket bucket[SIZE];
+
 public:
-    PriorityQueue()
+    HashTable()
     {
-        index = 0;
-        capacity = 0;
-        container = nullptr;
+        for (int i = 0; i < SIZE; i++)
+        {
+            bucket[i].count = 0;
+            bucket[i].head = nullptr;
+        }
     }
-
-    void resize(int newSize)
+    template<typename T>
+    const int& hash_function(T key)
     {
-        // 1. capacity에 새로운 size값을 저장 v
-        capacity = newSize;
-
-        // 2. 새로운 포인터 변수를 생성, 새롭게 만들어진 메모리 공간을 가리키도록 합니다.
-        T* newContainer = new T[capacity];
-        // 3. 새로운 메모리 공간의 값을 초기화합니다.
-        for (int i = 0; i < index; i++)
-        {
-            newContainer[i] = 0;
-        }
-        // 4. 기존 배열에 있는값을 복사해서 새로운 배열에 넣어준다.
-        for (int i = 0; i < index; i++)
-        {
-            newContainer[i] = container[i];
-        }
-        // 5. 기존배열의 메모리 해제
-        if (container != nullptr)
-        {
-            delete[] container;
-        }
-        // 6. 기존 배열을 가르키던 포인터 변수의 값을 새로운 배열의 시작주소로 가르킨다.
-        container = newContainer;
+        unsigned int hash_index = (unsigned int)key % SIZE;
+        //양수만 나오게하기 : if(key <= 0)을 사용한다?
+        //SIZE이상의 갯수를 저장못하게 : if(count >= 6)을 사용한다?
+        return hash_index;
     }
-    void push(T data)
+    Node* create_node(KEY key, VALUE value)
     {
-        if (index <= 0) resize(1);
-        if (index >= capacity)  resize(capacity * 2);
-
-        container[index++] = data;
-        int child = index - 1;
-        int parent = (child - 1) / 2;
-
-        //int child = index;
-        //int parent = (child-1)/2;
-        //container[child] = data;
-
-        while (child > 0)
+        //노드를 생성합니다.(동적으로 생성)
+        //newnode를 만들었으면 접근해서 key와 value값을 넣어준다.
+        Node* newNode = new Node;
+        newNode->key = key;
+        newNode->value = value;
+        newNode->next = nullptr;
+        return newNode;
+    }
+    void insert(KEY key, VALUE value)
+    {
+        //1. 해쉬함수를 통해 값을 받는 임시변수
+        int hashindex = hash_function(key);
+        //2 새로운 노드를 생성합니다.
+        Node* newNode = create_node(key, value);
+        //과정 : 값을 받고 원래 헤드를 next로 만든다.
+        //본인이 헤드가 된다. front개념과 유사
+        if (bucket[hashindex].count == 0)
         {
-            if (container[parent] < container[child])
+            bucket[hashindex].head = newNode;
+        }
+        else
+        {
+            newNode->next = bucket[hashindex].head;
+            bucket[hashindex].head = newNode;
+        }
+        //bucket[hashindex]의 count가 증가합니다.
+        bucket[hashindex].count++;
+    }
+    ~HashTable()
+    {
+        for (int i = 0; i < SIZE; i++)
+        {
+            Node* current = bucket[i].head;// i번째 버컷의 헤드를 말함
+            while (current != nullptr)//버켓이 비어있지 않다면 작동
             {
-                std::swap(container[parent], container[child]);
+                // i번째 버킷의 헤드를 current란 값에 임시저장
+                Node* deleteNode = current;
+                cout << deleteNode->key << endl;
+                //current값에 저장한 주소를 타고 자식을 current(헤드)로 만듬
+                current = current->next;
+
+                // i번째 bucket의 헤더"였던"애를 삭제
+                delete deleteNode;
             }
-            child = parent;
-            parent = (child - 1) / 2;
-        }
-    }
-    const  T& top()
-    {
-        return container[0];
-    }
-    const bool& empty()
-    {
-        return index <= 0;
-    }
-    void pop()
-    {
-        if (empty())
-        {
-            cout << "비었음" << endl;
-            return;
-        }
-        container[0] = container[index-1];
-        index--;
-        int parent = 0;
-
-        while (true)
-        {
-            int left = parent * 2;
-            int right = left + 1;
-            int largest = parent;
-
-            if (left < index && container[left] > container[largest])
-            {
-                largest = left;
-            }
-
-            // 오른쪽 자식이 존재하고 더 크면
-            if (right < index && container[right] > container[largest])
-            {
-                largest = right;
-            }
-
-            // 부모가 제일 크면 종료
-            if (largest == parent) break;
-            swap(container[parent], container[largest]);
-            parent = largest;
-
-            //if (container[parent] < container[left] && container[right])
-            //{
-            //    std::swap(container[parent], container[left]);
-            //}
+            //없어질 애는 굳이 초기화 안시켜도 됨
         }
 
-
-
     }
-    ~PriorityQueue()
-    {
-        if (container != nullptr)
-        {
-            delete[]container;
-        }
-    }
-
+    
 };
 int main()
 {
-    PriorityQueue<int>P;
-    P.push(10);
-    P.push(20);
-    P.push(30);
-    P.push(40);
-    P.push(50);
-    P.push(60);
-    P.push(70);
-    P.push(80);
-    P.pop();
-    cout << P.pop << endl;
-    cout << P.top() << endl;
-    cout << P.empty() << endl;
+    HashTable<const char*, int> hashTable;
+    hashTable.insert("1번", 1);
+    hashTable.insert("2번", 2);
+    hashTable.insert("3번", 3);
     
 }
