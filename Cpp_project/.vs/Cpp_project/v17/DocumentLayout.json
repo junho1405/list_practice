@@ -5,6 +5,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{56831B30-8363-4E95-B16B-4FDE7BF9B105}|Cpp_project\\Cpp_project.vcxproj|C:\\Users\\OFFICE\\Desktop\\list_practice\\Cpp_project\\Cpp_project\\Cpp_project.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{56831B30-8363-4E95-B16B-4FDE7BF9B105}|Cpp_project\\Cpp_project.vcxproj|solutionrelative:Cpp_project\\Cpp_project.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3046A5D-F73E-4AEB-8A9F-D7E1D669A676}|Class10th HashTable\\Class10th HashTable.vcxproj|C:\\Users\\OFFICE\\Desktop\\list_practice\\Cpp_project\\Class10th HashTable\\Class10th HashTable.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A3046A5D-F73E-4AEB-8A9F-D7E1D669A676}|Class10th HashTable\\Class10th HashTable.vcxproj|solutionrelative:Class10th HashTable\\Class10th HashTable.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +18,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 446,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Class10th HashTable.cpp",
+              "DocumentMoniker": "C:\\Users\\OFFICE\\Desktop\\list_practice\\Cpp_project\\Class10th HashTable\\Class10th HashTable.cpp",
+              "RelativeDocumentMoniker": "Class10th HashTable\\Class10th HashTable.cpp",
+              "ToolTip": "C:\\Users\\OFFICE\\Desktop\\list_practice\\Cpp_project\\Class10th HashTable\\Class10th HashTable.cpp",
+              "RelativeToolTip": "Class10th HashTable\\Class10th HashTable.cpp",
+              "ViewState": "AgIAAJ0AAAAAAAAAAAAYwLIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-07-25T05:11:16.805Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -24,7 +41,7 @@
               "RelativeDocumentMoniker": "Cpp_project\\Cpp_project.cpp",
               "ToolTip": "C:\\Users\\OFFICE\\Desktop\\list_practice\\Cpp_project\\Cpp_project\\Cpp_project.cpp",
               "RelativeToolTip": "Cpp_project\\Cpp_project.cpp",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAowE8AAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-07-08T04:23:34.603Z",
               "EditorCaption": ""
