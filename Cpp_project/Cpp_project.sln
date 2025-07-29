@@ -30,6 +30,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class8th priorityQueue", "C
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class10th HashTable", "Class10th HashTable\Class10th HashTable.vcxproj", "{A3046A5D-F73E-4AEB-8A9F-D7E1D669A676}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class11th  AdjacencyMatrix", "Class11th  AdjacencyMatrix\Class11th  AdjacencyMatrix.vcxproj", "{A7044ED1-D3BA-4791-969A-D5C89F362863}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -126,6 +128,14 @@ Global
 		{A3046A5D-F73E-4AEB-8A9F-D7E1D669A676}.Release|x64.Build.0 = Release|x64
 		{A3046A5D-F73E-4AEB-8A9F-D7E1D669A676}.Release|x86.ActiveCfg = Release|Win32
 		{A3046A5D-F73E-4AEB-8A9F-D7E1D669A676}.Release|x86.Build.0 = Release|Win32
+		{A7044ED1-D3BA-4791-969A-D5C89F362863}.Debug|x64.ActiveCfg = Debug|x64
+		{A7044ED1-D3BA-4791-969A-D5C89F362863}.Debug|x64.Build.0 = Debug|x64
+		{A7044ED1-D3BA-4791-969A-D5C89F362863}.Debug|x86.ActiveCfg = Debug|Win32
+		{A7044ED1-D3BA-4791-969A-D5C89F362863}.Debug|x86.Build.0 = Debug|Win32
+		{A7044ED1-D3BA-4791-969A-D5C89F362863}.Release|x64.ActiveCfg = Release|x64
+		{A7044ED1-D3BA-4791-969A-D5C89F362863}.Release|x64.Build.0 = Release|x64
+		{A7044ED1-D3BA-4791-969A-D5C89F362863}.Release|x86.ActiveCfg = Release|Win32
+		{A7044ED1-D3BA-4791-969A-D5C89F362863}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
