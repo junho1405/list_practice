@@ -1,94 +1,97 @@
-﻿#include<iostream>
-#define SIZE 10
+﻿#include <iostream>
+
 using namespace std;
 
 template<typename T>
-class AdjacencyList
+class Set
 {
 private:
     struct Node
     {
         T data;
-        Node* next;
+        Node* left;
+        Node* right;
 
-        Node(T data, Node* link = nullptr)
-        {
-            this->data = data;
-            next = link;
-        }
+        Node(T data) : data(data), left(nullptr), right(nullptr) {}
     };
-    int size; // 정점의 개수
-    T vertex[SIZE]; //  정점의 집합
-    Node* list[SIZE];   //  인접리스트
+        Node* root;
+        int size;
 public:
-
-    AdjacencyList()
-    {
-        size = 0;
-        for (int i = 0; i < SIZE; i++)
-        {
-            list[i] = NULL;
-            vertex[i] = NULL;
-        }
-    }
-    void push(T data)
-    {
-        if (size >= SIZE)
-        {
-            cout << "꽉참" << endl;
-        }
-        else
-        {
-            vertex[size++] = data;
-        }
-    }
-    void edge(int i, int j)
+    Set()
     {   
-        //if (i >= size || j >= size)
-        //{
-        //    cout << "안돼" << endl;
-        //}
-        //
-        //list[i] = new Node(j, list[i]);
-        //list[j] = new Node(i, list[j]);
-        if (size <= 0)
+        size = 0;
+        root = nullptr;
+    } 
+    Node* create_node(T data)
+    {
+        Node* newNode = new Node;
+        newNode->data = data;
+        newNode->left = nullptr;
+        newNode->right = nullptr;
+
+    }
+    void insert(T data)
+    {
+        if (root == nullptr)
         {
-            cout << "adjacency list is empty" << endl;
-        }
-        else if (i >= size || j >= size)
-        {
-            cout << "index out of range" << endl;
+            root = create_node(data);
         }
         else
         {
-            list[i] = new Node(vertex[j], list[i]);
-            list[j] = new Node(vertex[i], list[j]);
-        }
-    }
-    ~AdjacencyList()
-    {
-        for (int i = 0; i < SIZE; i++)
-        {
-            if (list[i] != nullptr)
+            Node* currentNode = root;
+            //while (currentNode != nullptr)
+            //{
+            //    return;
+            //}
+            if (currentNode->data > data)
             {
-                delete[] list[i];
+                if (currentNode->left == nullptr)
+                {
+                    currentNode->left = create_node(data);
+                }
+                else
+                {
+                    currentNode = currentNode -> left;
+                }
+
+            }
+            else
+            {
+                if (currentNode->right == nullptr)
+                {
+                    currentNode->right = create_node(data);
+
+                    return;
+                }
+                else
+                {
+                    currentNode = currentNode->right;
+                }
             }
 
         }
+    }
+    void release(Node* node)
+    {
+        //재귀함수, 3줄정도면 끝남
+        // nullptr이면 이전으로 돌아가게한다.
+        // 그러고 반대편 탐색
+        // 둘다 nullptr이나오면 보닝ㄴ을 삭제
+        if (root == nullptr) return;
+        release(node->left);
+        release(node->right);
+        delete node;    
+        //본인을 호출해서 하는것
+
+    }
+    ~Set()
+    {
+        release(root);
     }
 };
 
 int main()
 {
-    AdjacencyList<char> adjacencyList;
 
-    adjacencyList.push('A');
-    adjacencyList.push('B');
-    adjacencyList.push('C');
-
-    adjacencyList.edge(0,1);
-    adjacencyList.edge(0,2);
-
-    return 0;
-
+  
 }

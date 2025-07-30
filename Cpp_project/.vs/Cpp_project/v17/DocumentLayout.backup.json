@@ -7,8 +7,8 @@
       "RelativeMoniker": "D:0:0:{56831B30-8363-4E95-B16B-4FDE7BF9B105}|Cpp_project\\Cpp_project.vcxproj|solutionrelative:Cpp_project\\Cpp_project.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A7044ED1-D3BA-4791-969A-D5C89F362863}|Class11th  AdjacencyMatrix\\Class11th  AdjacencyMatrix.vcxproj|C:\\Users\\OFFICE\\Desktop\\list_practice\\Cpp_project\\Class11th  AdjacencyMatrix\\Class11th  AdjacencyMatrix.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A7044ED1-D3BA-4791-969A-D5C89F362863}|Class11th  AdjacencyMatrix\\Class11th  AdjacencyMatrix.vcxproj|solutionrelative:Class11th  AdjacencyMatrix\\Class11th  AdjacencyMatrix.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{62761AAC-864A-47E8-9656-4F717CF00727}|Class12th adjacencyList\\Class12th adjacencyList.vcxproj|C:\\Users\\OFFICE\\Desktop\\list_practice\\Cpp_project\\Class12th adjacencyList\\Class12th adjacencyList.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{62761AAC-864A-47E8-9656-4F717CF00727}|Class12th adjacencyList\\Class12th adjacencyList.vcxproj|solutionrelative:Class12th adjacencyList\\Class12th adjacencyList.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,15 +23,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Class11th  AdjacencyMatrix.cpp",
-              "DocumentMoniker": "C:\\Users\\OFFICE\\Desktop\\list_practice\\Cpp_project\\Class11th  AdjacencyMatrix\\Class11th  AdjacencyMatrix.cpp",
-              "RelativeDocumentMoniker": "Class11th  AdjacencyMatrix\\Class11th  AdjacencyMatrix.cpp",
-              "ToolTip": "C:\\Users\\OFFICE\\Desktop\\list_practice\\Cpp_project\\Class11th  AdjacencyMatrix\\Class11th  AdjacencyMatrix.cpp",
-              "RelativeToolTip": "Class11th  AdjacencyMatrix\\Class11th  AdjacencyMatrix.cpp",
-              "ViewState": "AgIAAGQBAAAAAAAAAAAIwE8BAAARAAAAAAAAAA==",
+              "Title": "Class12th adjacencyList.cpp",
+              "DocumentMoniker": "C:\\Users\\OFFICE\\Desktop\\list_practice\\Cpp_project\\Class12th adjacencyList\\Class12th adjacencyList.cpp",
+              "RelativeDocumentMoniker": "Class12th adjacencyList\\Class12th adjacencyList.cpp",
+              "ToolTip": "C:\\Users\\OFFICE\\Desktop\\list_practice\\Cpp_project\\Class12th adjacencyList\\Class12th adjacencyList.cpp",
+              "RelativeToolTip": "Class12th adjacencyList\\Class12th adjacencyList.cpp",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAAAAsAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-07-29T05:25:57.177Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-30T05:07:27.593Z"
             },
             {
               "$type": "Document",
@@ -41,7 +40,7 @@
               "RelativeDocumentMoniker": "Cpp_project\\Cpp_project.cpp",
               "ToolTip": "C:\\Users\\OFFICE\\Desktop\\list_practice\\Cpp_project\\Cpp_project\\Cpp_project.cpp",
               "RelativeToolTip": "Cpp_project\\Cpp_project.cpp",
-              "ViewState": "AgIAADMAAAAAAAAAAAAYwEkAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAswFIAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-07-08T04:23:34.603Z",
               "EditorCaption": ""
