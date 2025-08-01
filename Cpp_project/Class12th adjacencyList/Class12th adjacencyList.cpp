@@ -69,7 +69,7 @@ public:
             while (currentNode != nullptr)
             {
                 ostream << currentNode.data << " ";
-                currentNode = courrentNode->next;
+                currentNode = currentNode->next;
             }
             ostream << endl;
         }
